@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<img class = "logo" src="origin.png" alt="Slow connections" width="200" height="100">
+<form class="box" action="index.html" method="post">
+
+  <input type="text" id = "nom" name="" placeholder="Username">
+  <input type="email" id= "correo" name="" placeholder="Mail">
+  <input type="password" id= "contra" name="" placeholder="Password">
+
+  <input type="submit" onclick="obtener()" id="" name="" value="Login">
+</form>
+
+  </body>
+
+  <script type="text/javascript">
+
+
+    function obtener(){
+      var usuario = "GilSalgado"
+      var correo = "gilsalgado@gmail.com"
+      var contraseña = "contraseña"
+      var IUsuario = document.querySelector("#nom").value ;
+     var ICorreo =  document.querySelector("#correo").value ;
+      var IContra = document.querySelector("#contra").value;
+
+      if(usuario == IUsuario && correo == ICorreo && contraseña==IContra){
+        alert("Se ha ingresado correctamente ")
+      }
+      else{
+        alert("Acceso negado.Intente otra vez ")
+      }
+
+    }
+  </script>
+</html>
